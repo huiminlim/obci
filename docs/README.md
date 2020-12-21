@@ -51,8 +51,6 @@ Currently, this project is developed for the ATmega 2560 microcontroller and bes
 +---------------+                                   +---------------+
 ```
 
-The OBC will have a CSP address of 1, while the Subsystem will have a CSP address of 8.
-
 This may be expanded to accommodate other AVR microcontroller when more hardware subsystems are included in the project.
 
 This is the expected output.
