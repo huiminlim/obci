@@ -1352,7 +1352,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x5f24
+.text           0x00000000     0x5f3a
  *(.vectors)
  .vectors       0x00000000       0xe4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega2560/avr6/crtatmega2560.o
                 0x00000000                __vector_default
@@ -1480,57 +1480,58 @@ END GROUP
                 0x00000d28       0x32 src/libcsp/src/transport/csp_udp.o
  .progmem.data.__c.2546
                 0x00000d5a       0x2b src/libcsp/src/transport/csp_udp.o
+ .progmem.data.__c.3455
+                0x00000d85       0x13 src/obc/obc_task.o
  .progmem.data.__c.3453
-                0x00000d85       0x11 src/obc/obc_task.o
+                0x00000d98       0x14 src/obc/obc_task.o
  .progmem.data.__c.3451
-                0x00000d96       0x12 src/obc/obc_task.o
+                0x00000dac       0x21 src/obc/obc_task.o
  .progmem.data.__c.3449
-                0x00000da8       0x1a src/obc/obc_task.o
- .progmem.data.__c.3447
-                0x00000dc2       0x12 src/obc/obc_task.o
+                0x00000dcd       0x16 src/obc/obc_task.o
  .progmem.data.__c.3144
-                0x00000dd4        0x3 src/util/i2c.o
+                0x00000de3        0x3 src/util/i2c.o
  .progmem.data.__c.3122
-                0x00000dd7       0x17 src/util/i2c.o
+                0x00000de6       0x17 src/util/i2c.o
  .progmem.data.__c.3082
-                0x00000dee       0x12 src/util/i2c.o
+                0x00000dfd       0x12 src/util/i2c.o
  .progmem.data.__c.3080
-                0x00000e00       0x39 src/util/i2c.o
+                0x00000e0f       0x39 src/util/i2c.o
  .progmem.data.__c.3436
-                0x00000e39       0x2d src/src/main.o
+                0x00000e48       0x2f src/src/main.o
  .progmem.data.__c.3430
-                0x00000e66        0x3 src/src/main.o
+                0x00000e77        0x3 src/src/main.o
  .progmem.data.__c.3428
-                0x00000e69       0x33 src/src/main.o
-                0x00000e9c                . = ALIGN (0x2)
+                0x00000e7a       0x33 src/src/main.o
+                0x00000eae                . = ALIGN (0x2)
+ *fill*         0x00000ead        0x1 
  *(.jumptables)
  *(.jumptables*)
  *(.lowtext)
  *(.lowtext*)
-                0x00000e9c                __ctors_start = .
+                0x00000eae                __ctors_start = .
  *(.ctors)
-                0x00000e9c                __ctors_end = .
-                0x00000e9c                __dtors_start = .
+                0x00000eae                __ctors_end = .
+                0x00000eae                __dtors_start = .
  *(.dtors)
-                0x00000e9c                __dtors_end = .
+                0x00000eae                __dtors_end = .
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x00000e9c        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega2560/avr6/crtatmega2560.o
-                0x00000e9c                __init
+ .init0         0x00000eae        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega2560/avr6/crtatmega2560.o
+                0x00000eae                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x00000e9c       0x10 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega2560/avr6/crtatmega2560.o
+ .init2         0x00000eae       0x10 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega2560/avr6/crtatmega2560.o
  *(.init2)
  *(.init3)
  *(.init3)
  *(.init4)
- .init4         0x00000eac       0x1a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_copy_data.o)
-                0x00000eac                __do_copy_data
- .init4         0x00000ec6       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_clear_bss.o)
-                0x00000ec6                __do_clear_bss
+ .init4         0x00000ebe       0x1a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_copy_data.o)
+                0x00000ebe                __do_copy_data
+ .init4         0x00000ed8       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_clear_bss.o)
+                0x00000ed8                __do_clear_bss
  *(.init4)
  *(.init5)
  *(.init5)
@@ -1541,467 +1542,467 @@ END GROUP
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x00000ed6        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega2560/avr6/crtatmega2560.o
+ .init9         0x00000ee8        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega2560/avr6/crtatmega2560.o
  *(.init9)
  *(.text)
- .text          0x00000ede        0x2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega2560/avr6/crtatmega2560.o
-                0x00000ede                __vector_38
-                0x00000ede                __vector_22
-                0x00000ede                __vector_28
-                0x00000ede                __vector_1
-                0x00000ede                __vector_32
-                0x00000ede                __vector_34
-                0x00000ede                __vector_24
-                0x00000ede                __vector_12
-                0x00000ede                __vector_55
-                0x00000ede                __vector_46
-                0x00000ede                __bad_interrupt
-                0x00000ede                __vector_6
-                0x00000ede                __vector_31
-                0x00000ede                __vector_35
-                0x00000ede                __vector_3
-                0x00000ede                __vector_23
-                0x00000ede                __vector_30
-                0x00000ede                __vector_45
-                0x00000ede                __vector_25
-                0x00000ede                __vector_11
-                0x00000ede                __vector_54
-                0x00000ede                __vector_13
-                0x00000ede                __vector_19
-                0x00000ede                __vector_56
-                0x00000ede                __vector_7
-                0x00000ede                __vector_49
-                0x00000ede                __vector_41
-                0x00000ede                __vector_43
-                0x00000ede                __vector_27
-                0x00000ede                __vector_5
-                0x00000ede                __vector_33
-                0x00000ede                __vector_47
-                0x00000ede                __vector_52
-                0x00000ede                __vector_37
-                0x00000ede                __vector_4
-                0x00000ede                __vector_44
-                0x00000ede                __vector_51
-                0x00000ede                __vector_9
-                0x00000ede                __vector_2
-                0x00000ede                __vector_21
-                0x00000ede                __vector_15
-                0x00000ede                __vector_36
-                0x00000ede                __vector_29
-                0x00000ede                __vector_40
-                0x00000ede                __vector_8
-                0x00000ede                __vector_26
-                0x00000ede                __vector_48
-                0x00000ede                __vector_14
-                0x00000ede                __vector_53
-                0x00000ede                __vector_10
-                0x00000ede                __vector_50
-                0x00000ede                __vector_16
-                0x00000ede                __vector_18
-                0x00000ede                __vector_20
-                0x00000ede                __vector_42
-                0x00000ee0                . = ALIGN (0x2)
+ .text          0x00000ef0        0x2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega2560/avr6/crtatmega2560.o
+                0x00000ef0                __vector_38
+                0x00000ef0                __vector_22
+                0x00000ef0                __vector_28
+                0x00000ef0                __vector_1
+                0x00000ef0                __vector_32
+                0x00000ef0                __vector_34
+                0x00000ef0                __vector_24
+                0x00000ef0                __vector_12
+                0x00000ef0                __vector_55
+                0x00000ef0                __vector_46
+                0x00000ef0                __bad_interrupt
+                0x00000ef0                __vector_6
+                0x00000ef0                __vector_31
+                0x00000ef0                __vector_35
+                0x00000ef0                __vector_3
+                0x00000ef0                __vector_23
+                0x00000ef0                __vector_30
+                0x00000ef0                __vector_45
+                0x00000ef0                __vector_25
+                0x00000ef0                __vector_11
+                0x00000ef0                __vector_54
+                0x00000ef0                __vector_13
+                0x00000ef0                __vector_19
+                0x00000ef0                __vector_56
+                0x00000ef0                __vector_7
+                0x00000ef0                __vector_49
+                0x00000ef0                __vector_41
+                0x00000ef0                __vector_43
+                0x00000ef0                __vector_27
+                0x00000ef0                __vector_5
+                0x00000ef0                __vector_33
+                0x00000ef0                __vector_47
+                0x00000ef0                __vector_52
+                0x00000ef0                __vector_37
+                0x00000ef0                __vector_4
+                0x00000ef0                __vector_44
+                0x00000ef0                __vector_51
+                0x00000ef0                __vector_9
+                0x00000ef0                __vector_2
+                0x00000ef0                __vector_21
+                0x00000ef0                __vector_15
+                0x00000ef0                __vector_36
+                0x00000ef0                __vector_29
+                0x00000ef0                __vector_40
+                0x00000ef0                __vector_8
+                0x00000ef0                __vector_26
+                0x00000ef0                __vector_48
+                0x00000ef0                __vector_14
+                0x00000ef0                __vector_53
+                0x00000ef0                __vector_10
+                0x00000ef0                __vector_50
+                0x00000ef0                __vector_16
+                0x00000ef0                __vector_18
+                0x00000ef0                __vector_20
+                0x00000ef0                __vector_42
+                0x00000ef2                . = ALIGN (0x2)
  *(.text.*)
  .text.vListInitialise
-                0x00000ee0       0x22 src/FreeRTOS/Source/list.o
-                0x00000ee0                vListInitialise
+                0x00000ef2       0x22 src/FreeRTOS/Source/list.o
+                0x00000ef2                vListInitialise
  .text.vListInitialiseItem
-                0x00000f02        0x8 src/FreeRTOS/Source/list.o
-                0x00000f02                vListInitialiseItem
+                0x00000f14        0x8 src/FreeRTOS/Source/list.o
+                0x00000f14                vListInitialiseItem
  .text.vListInsertEnd
-                0x00000f0a       0x42 src/FreeRTOS/Source/list.o
-                0x00000f0a                vListInsertEnd
+                0x00000f1c       0x42 src/FreeRTOS/Source/list.o
+                0x00000f1c                vListInsertEnd
  .text.vListInsert
-                0x00000f4c       0x7a src/FreeRTOS/Source/list.o
-                0x00000f4c                vListInsert
+                0x00000f5e       0x7a src/FreeRTOS/Source/list.o
+                0x00000f5e                vListInsert
  .text.uxListRemove
-                0x00000fc6       0x4c src/FreeRTOS/Source/list.o
-                0x00000fc6                uxListRemove
+                0x00000fd8       0x4c src/FreeRTOS/Source/list.o
+                0x00000fd8                uxListRemove
  .text.prvInsertBlockIntoFreeList
-                0x00001012       0x9a src/FreeRTOS/Source/portable/MemMang/heap_4.o
+                0x00001024       0x9a src/FreeRTOS/Source/portable/MemMang/heap_4.o
  .text.pvPortMalloc
-                0x000010ac      0x188 src/FreeRTOS/Source/portable/MemMang/heap_4.o
-                0x000010ac                pvPortMalloc
+                0x000010be      0x188 src/FreeRTOS/Source/portable/MemMang/heap_4.o
+                0x000010be                pvPortMalloc
  .text.vPortFree
-                0x00001234       0x5e src/FreeRTOS/Source/portable/MemMang/heap_4.o
-                0x00001234                vPortFree
+                0x00001246       0x5e src/FreeRTOS/Source/portable/MemMang/heap_4.o
+                0x00001246                vPortFree
  .text.pxPortInitialiseStack
-                0x00001292       0xe4 src/FreeRTOS/Source/portable/WinAVR/ATmega2560/port.o
-                0x00001292                pxPortInitialiseStack
+                0x000012a4       0xe4 src/FreeRTOS/Source/portable/WinAVR/ATmega2560/port.o
+                0x000012a4                pxPortInitialiseStack
  .text.xPortStartScheduler
-                0x00001376       0x80 src/FreeRTOS/Source/portable/WinAVR/ATmega2560/port.o
-                0x00001376                xPortStartScheduler
+                0x00001388       0x80 src/FreeRTOS/Source/portable/WinAVR/ATmega2560/port.o
+                0x00001388                xPortStartScheduler
  .text.vPortYield
-                0x000013f6       0xc0 src/FreeRTOS/Source/portable/WinAVR/ATmega2560/port.o
-                0x000013f6                vPortYield
+                0x00001408       0xc0 src/FreeRTOS/Source/portable/WinAVR/ATmega2560/port.o
+                0x00001408                vPortYield
  .text.vPortYieldFromTick
-                0x000014b6       0xc4 src/FreeRTOS/Source/portable/WinAVR/ATmega2560/port.o
-                0x000014b6                vPortYieldFromTick
+                0x000014c8       0xc4 src/FreeRTOS/Source/portable/WinAVR/ATmega2560/port.o
+                0x000014c8                vPortYieldFromTick
  .text.__vector_17
-                0x0000157a        0x4 src/FreeRTOS/Source/portable/WinAVR/ATmega2560/port.o
-                0x0000157a                __vector_17
+                0x0000158c        0x4 src/FreeRTOS/Source/portable/WinAVR/ATmega2560/port.o
+                0x0000158c                __vector_17
  .text.prvCopyDataToQueue
-                0x0000157e       0xbe src/FreeRTOS/Source/queue.o
+                0x00001590       0xbe src/FreeRTOS/Source/queue.o
  .text.prvCopyDataFromQueue
-                0x0000163c       0x34 src/FreeRTOS/Source/queue.o
+                0x0000164e       0x34 src/FreeRTOS/Source/queue.o
  .text.prvUnlockQueue
-                0x00001670       0x92 src/FreeRTOS/Source/queue.o
+                0x00001682       0x92 src/FreeRTOS/Source/queue.o
  .text.xQueueGenericReset
-                0x00001702       0x72 src/FreeRTOS/Source/queue.o
-                0x00001702                xQueueGenericReset
+                0x00001714       0x72 src/FreeRTOS/Source/queue.o
+                0x00001714                xQueueGenericReset
  .text.xQueueGenericCreate
-                0x00001774       0x5c src/FreeRTOS/Source/queue.o
-                0x00001774                xQueueGenericCreate
+                0x00001786       0x5c src/FreeRTOS/Source/queue.o
+                0x00001786                xQueueGenericCreate
  .text.xQueueGenericSend
-                0x000017d0      0x138 src/FreeRTOS/Source/queue.o
-                0x000017d0                xQueueGenericSend
+                0x000017e2      0x138 src/FreeRTOS/Source/queue.o
+                0x000017e2                xQueueGenericSend
  .text.xQueueCreateMutex
-                0x00001908       0x36 src/FreeRTOS/Source/queue.o
-                0x00001908                xQueueCreateMutex
+                0x0000191a       0x36 src/FreeRTOS/Source/queue.o
+                0x0000191a                xQueueCreateMutex
  .text.xQueueGenericSendFromISR
-                0x0000193e       0x70 src/FreeRTOS/Source/queue.o
-                0x0000193e                xQueueGenericSendFromISR
+                0x00001950       0x70 src/FreeRTOS/Source/queue.o
+                0x00001950                xQueueGenericSendFromISR
  .text.xQueueGenericReceive
-                0x000019ae      0x18a src/FreeRTOS/Source/queue.o
-                0x000019ae                xQueueGenericReceive
+                0x000019c0      0x18a src/FreeRTOS/Source/queue.o
+                0x000019c0                xQueueGenericReceive
  .text.xQueueReceiveFromISR
-                0x00001b38       0x6a src/FreeRTOS/Source/queue.o
-                0x00001b38                xQueueReceiveFromISR
+                0x00001b4a       0x6a src/FreeRTOS/Source/queue.o
+                0x00001b4a                xQueueReceiveFromISR
  .text.uxQueueMessagesWaiting
-                0x00001ba2       0x10 src/FreeRTOS/Source/queue.o
-                0x00001ba2                uxQueueMessagesWaiting
+                0x00001bb4       0x10 src/FreeRTOS/Source/queue.o
+                0x00001bb4                uxQueueMessagesWaiting
  .text.uxQueueMessagesWaitingFromISR
-                0x00001bb2        0x6 src/FreeRTOS/Source/queue.o
-                0x00001bb2                uxQueueMessagesWaitingFromISR
+                0x00001bc4        0x6 src/FreeRTOS/Source/queue.o
+                0x00001bc4                uxQueueMessagesWaitingFromISR
  .text.prvResetNextTaskUnblockTime
-                0x00001bb8       0x54 src/FreeRTOS/Source/tasks.o
+                0x00001bca       0x54 src/FreeRTOS/Source/tasks.o
  .text.prvAddCurrentTaskToDelayedList
-                0x00001c0c       0xe6 src/FreeRTOS/Source/tasks.o
+                0x00001c1e       0xe6 src/FreeRTOS/Source/tasks.o
  .text.xTaskCreate
-                0x00001cf2      0x21a src/FreeRTOS/Source/tasks.o
-                0x00001cf2                xTaskCreate
+                0x00001d04      0x21a src/FreeRTOS/Source/tasks.o
+                0x00001d04                xTaskCreate
  .text.xTaskResumeFromISR
-                0x00001f0c       0x9e src/FreeRTOS/Source/tasks.o
-                0x00001f0c                xTaskResumeFromISR
+                0x00001f1e       0x9e src/FreeRTOS/Source/tasks.o
+                0x00001f1e                xTaskResumeFromISR
  .text.vTaskStartScheduler
-                0x00001faa       0x62 src/FreeRTOS/Source/tasks.o
-                0x00001faa                vTaskStartScheduler
+                0x00001fbc       0x62 src/FreeRTOS/Source/tasks.o
+                0x00001fbc                vTaskStartScheduler
  .text.vTaskSuspendAll
-                0x0000200c        0xc src/FreeRTOS/Source/tasks.o
-                0x0000200c                vTaskSuspendAll
+                0x0000201e        0xc src/FreeRTOS/Source/tasks.o
+                0x0000201e                vTaskSuspendAll
  .text.xTaskGetTickCount
-                0x00002018       0x1c src/FreeRTOS/Source/tasks.o
-                0x00002018                xTaskGetTickCount
+                0x0000202a       0x1c src/FreeRTOS/Source/tasks.o
+                0x0000202a                xTaskGetTickCount
  .text.xTaskIncrementTick
-                0x00002034      0x1aa src/FreeRTOS/Source/tasks.o
-                0x00002034                xTaskIncrementTick
+                0x00002046      0x1aa src/FreeRTOS/Source/tasks.o
+                0x00002046                xTaskIncrementTick
  .text.xTaskResumeAll
-                0x000021de       0xf6 src/FreeRTOS/Source/tasks.o
-                0x000021de                xTaskResumeAll
+                0x000021f0       0xf6 src/FreeRTOS/Source/tasks.o
+                0x000021f0                xTaskResumeAll
  .text.vTaskDelay
-                0x000022d4       0x30 src/FreeRTOS/Source/tasks.o
-                0x000022d4                vTaskDelay
+                0x000022e6       0x30 src/FreeRTOS/Source/tasks.o
+                0x000022e6                vTaskDelay
  .text.prvIdleTask
-                0x00002304       0x74 src/FreeRTOS/Source/tasks.o
+                0x00002316       0x74 src/FreeRTOS/Source/tasks.o
  .text.vTaskSwitchContext
-                0x00002378       0xae src/FreeRTOS/Source/tasks.o
-                0x00002378                vTaskSwitchContext
+                0x0000238a       0xae src/FreeRTOS/Source/tasks.o
+                0x0000238a                vTaskSwitchContext
  .text.vTaskPlaceOnEventList
-                0x00002426       0x2e src/FreeRTOS/Source/tasks.o
-                0x00002426                vTaskPlaceOnEventList
+                0x00002438       0x2e src/FreeRTOS/Source/tasks.o
+                0x00002438                vTaskPlaceOnEventList
  .text.xTaskRemoveFromEventList
-                0x00002454       0x84 src/FreeRTOS/Source/tasks.o
-                0x00002454                xTaskRemoveFromEventList
+                0x00002466       0x84 src/FreeRTOS/Source/tasks.o
+                0x00002466                xTaskRemoveFromEventList
  .text.vTaskSetTimeOutState
-                0x000024d8       0x22 src/FreeRTOS/Source/tasks.o
-                0x000024d8                vTaskSetTimeOutState
+                0x000024ea       0x22 src/FreeRTOS/Source/tasks.o
+                0x000024ea                vTaskSetTimeOutState
  .text.xTaskCheckForTimeOut
-                0x000024fa       0xcc src/FreeRTOS/Source/tasks.o
-                0x000024fa                xTaskCheckForTimeOut
+                0x0000250c       0xcc src/FreeRTOS/Source/tasks.o
+                0x0000250c                xTaskCheckForTimeOut
  .text.vTaskMissedYield
-                0x000025c6        0x8 src/FreeRTOS/Source/tasks.o
-                0x000025c6                vTaskMissedYield
+                0x000025d8        0x8 src/FreeRTOS/Source/tasks.o
+                0x000025d8                vTaskMissedYield
  .text.vTaskPriorityInherit
-                0x000025ce       0xbc src/FreeRTOS/Source/tasks.o
-                0x000025ce                vTaskPriorityInherit
+                0x000025e0       0xbc src/FreeRTOS/Source/tasks.o
+                0x000025e0                vTaskPriorityInherit
  .text.xTaskPriorityDisinherit
-                0x0000268a       0x80 src/FreeRTOS/Source/tasks.o
-                0x0000268a                xTaskPriorityDisinherit
+                0x0000269c       0x80 src/FreeRTOS/Source/tasks.o
+                0x0000269c                xTaskPriorityDisinherit
  .text.pvTaskIncrementMutexHeldCount
-                0x0000270a       0x24 src/FreeRTOS/Source/tasks.o
-                0x0000270a                pvTaskIncrementMutexHeldCount
+                0x0000271c       0x24 src/FreeRTOS/Source/tasks.o
+                0x0000271c                pvTaskIncrementMutexHeldCount
  .text.csp_malloc
-                0x0000272e        0x6 src/libcsp/src/arch/freertos/csp_malloc.o
-                0x0000272e                csp_malloc
+                0x00002740        0x6 src/libcsp/src/arch/freertos/csp_malloc.o
+                0x00002740                csp_malloc
  .text.csp_free
-                0x00002734        0x6 src/libcsp/src/arch/freertos/csp_malloc.o
-                0x00002734                csp_free
+                0x00002746        0x6 src/libcsp/src/arch/freertos/csp_malloc.o
+                0x00002746                csp_free
  .text.csp_queue_create
-                0x0000273a        0x6 src/libcsp/src/arch/freertos/csp_queue.o
-                0x0000273a                csp_queue_create
+                0x0000274c        0x6 src/libcsp/src/arch/freertos/csp_queue.o
+                0x0000274c                csp_queue_create
  .text.csp_queue_enqueue
-                0x00002740       0x10 src/libcsp/src/arch/freertos/csp_queue.o
-                0x00002740                csp_queue_enqueue
+                0x00002752       0x10 src/libcsp/src/arch/freertos/csp_queue.o
+                0x00002752                csp_queue_enqueue
  .text.csp_queue_enqueue_isr
-                0x00002750        0xc src/libcsp/src/arch/freertos/csp_queue.o
-                0x00002750                csp_queue_enqueue_isr
+                0x00002762        0xc src/libcsp/src/arch/freertos/csp_queue.o
+                0x00002762                csp_queue_enqueue_isr
  .text.csp_queue_dequeue
-                0x0000275c       0x10 src/libcsp/src/arch/freertos/csp_queue.o
-                0x0000275c                csp_queue_dequeue
+                0x0000276e       0x10 src/libcsp/src/arch/freertos/csp_queue.o
+                0x0000276e                csp_queue_dequeue
  .text.csp_queue_dequeue_isr
-                0x0000276c        0xa src/libcsp/src/arch/freertos/csp_queue.o
-                0x0000276c                csp_queue_dequeue_isr
+                0x0000277e        0xa src/libcsp/src/arch/freertos/csp_queue.o
+                0x0000277e                csp_queue_dequeue_isr
  .text.csp_queue_size
-                0x00002776        0x6 src/libcsp/src/arch/freertos/csp_queue.o
-                0x00002776                csp_queue_size
+                0x00002788        0x6 src/libcsp/src/arch/freertos/csp_queue.o
+                0x00002788                csp_queue_size
  .text.csp_mutex_create
-                0x0000277c       0x22 src/libcsp/src/arch/freertos/csp_semaphore.o
-                0x0000277c                csp_mutex_create
+                0x0000278e       0x22 src/libcsp/src/arch/freertos/csp_semaphore.o
+                0x0000278e                csp_mutex_create
  .text.csp_bin_sem_create
-                0x0000279e       0x34 src/libcsp/src/arch/freertos/csp_semaphore.o
-                0x0000279e                csp_bin_sem_create
+                0x000027b0       0x34 src/libcsp/src/arch/freertos/csp_semaphore.o
+                0x000027b0                csp_bin_sem_create
  .text.csp_bin_sem_wait
-                0x000027d2       0x82 src/libcsp/src/arch/freertos/csp_semaphore.o
-                0x000027d2                csp_bin_sem_wait
+                0x000027e4       0x82 src/libcsp/src/arch/freertos/csp_semaphore.o
+                0x000027e4                csp_bin_sem_wait
  .text.csp_bin_sem_post
-                0x00002854       0x72 src/libcsp/src/arch/freertos/csp_semaphore.o
-                0x00002854                csp_bin_sem_post
+                0x00002866       0x72 src/libcsp/src/arch/freertos/csp_semaphore.o
+                0x00002866                csp_bin_sem_post
  .text.csp_sys_set_color
-                0x000028c6       0xac src/libcsp/src/arch/freertos/csp_system.o
-                0x000028c6                csp_sys_set_color
+                0x000028d8       0xac src/libcsp/src/arch/freertos/csp_system.o
+                0x000028d8                csp_sys_set_color
  .text.csp_thread_create
-                0x00002972       0x24 src/libcsp/src/arch/freertos/csp_thread.o
-                0x00002972                csp_thread_create
+                0x00002984       0x24 src/libcsp/src/arch/freertos/csp_thread.o
+                0x00002984                csp_thread_create
  .text.csp_get_ms
-                0x00002996        0x4 src/libcsp/src/arch/freertos/csp_time.o
-                0x00002996                csp_get_ms
+                0x000029a8        0x4 src/libcsp/src/arch/freertos/csp_time.o
+                0x000029a8                csp_get_ms
  .text.csp_buffer_init
-                0x0000299a      0x116 src/libcsp/src/csp_buffer.o
-                0x0000299a                csp_buffer_init
+                0x000029ac      0x116 src/libcsp/src/csp_buffer.o
+                0x000029ac                csp_buffer_init
  .text.csp_buffer_get_isr
-                0x00002ab0       0x76 src/libcsp/src/csp_buffer.o
-                0x00002ab0                csp_buffer_get_isr
+                0x00002ac2       0x76 src/libcsp/src/csp_buffer.o
+                0x00002ac2                csp_buffer_get_isr
  .text.csp_buffer_get
-                0x00002b26      0x182 src/libcsp/src/csp_buffer.o
-                0x00002b26                csp_buffer_get
+                0x00002b38      0x182 src/libcsp/src/csp_buffer.o
+                0x00002b38                csp_buffer_get
  .text.csp_buffer_free_isr
-                0x00002ca8       0x70 src/libcsp/src/csp_buffer.o
-                0x00002ca8                csp_buffer_free_isr
+                0x00002cba       0x70 src/libcsp/src/csp_buffer.o
+                0x00002cba                csp_buffer_free_isr
  .text.csp_buffer_free
-                0x00002d18      0x1ec src/libcsp/src/csp_buffer.o
-                0x00002d18                csp_buffer_free
+                0x00002d2a      0x1ec src/libcsp/src/csp_buffer.o
+                0x00002d2a                csp_buffer_free
  .text.csp_conn_enqueue_packet
-                0x00002f04       0xae src/libcsp/src/csp_conn.o
-                0x00002f04                csp_conn_enqueue_packet
+                0x00002f16       0xae src/libcsp/src/csp_conn.o
+                0x00002f16                csp_conn_enqueue_packet
  .text.csp_conn_init
-                0x00002fb2      0x14c src/libcsp/src/csp_conn.o
-                0x00002fb2                csp_conn_init
+                0x00002fc4      0x14c src/libcsp/src/csp_conn.o
+                0x00002fc4                csp_conn_init
  .text.csp_conn_find
-                0x000030fe       0x88 src/libcsp/src/csp_conn.o
-                0x000030fe                csp_conn_find
+                0x00003110       0x88 src/libcsp/src/csp_conn.o
+                0x00003110                csp_conn_find
  .text.csp_conn_flush_rx_queue
-                0x00003186       0x48 src/libcsp/src/csp_conn.o
-                0x00003186                csp_conn_flush_rx_queue
+                0x00003198       0x48 src/libcsp/src/csp_conn.o
+                0x00003198                csp_conn_flush_rx_queue
  .text.csp_conn_allocate
-                0x000031ce      0x142 src/libcsp/src/csp_conn.o
-                0x000031ce                csp_conn_allocate
+                0x000031e0      0x142 src/libcsp/src/csp_conn.o
+                0x000031e0                csp_conn_allocate
  .text.csp_conn_new
-                0x00003310       0x5c src/libcsp/src/csp_conn.o
-                0x00003310                csp_conn_new
+                0x00003322       0x5c src/libcsp/src/csp_conn.o
+                0x00003322                csp_conn_new
  .text.csp_close
-                0x0000336c      0x110 src/libcsp/src/csp_conn.o
-                0x0000336c                csp_close
+                0x0000337e      0x110 src/libcsp/src/csp_conn.o
+                0x0000337e                csp_close
  .text.csp_connect
-                0x0000347c      0x278 src/libcsp/src/csp_conn.o
-                0x0000347c                csp_connect
+                0x0000348e      0x278 src/libcsp/src/csp_conn.o
+                0x0000348e                csp_connect
  .text.do_csp_debug
-                0x000036f4       0xaa src/libcsp/src/csp_debug.o
-                0x000036f4                do_csp_debug
+                0x00003706       0xaa src/libcsp/src/csp_debug.o
+                0x00003706                do_csp_debug
  .text.csp_hton32
-                0x0000379e       0x6a src/libcsp/src/csp_endian.o
-                0x0000379e                csp_hton32
+                0x000037b0       0x6a src/libcsp/src/csp_endian.o
+                0x000037b0                csp_hton32
  .text.csp_ntoh32
-                0x00003808       0x6a src/libcsp/src/csp_endian.o
-                0x00003808                csp_ntoh32
+                0x0000381a       0x6a src/libcsp/src/csp_endian.o
+                0x0000381a                csp_ntoh32
  .text.csp_iflist_add
-                0x00003872       0x52 src/libcsp/src/csp_iflist.o
-                0x00003872                csp_iflist_add
+                0x00003884       0x52 src/libcsp/src/csp_iflist.o
+                0x00003884                csp_iflist_add
  .text.csp_get_address
-                0x000038c4        0x6 src/libcsp/src/csp_io.o
-                0x000038c4                csp_get_address
+                0x000038d6        0x6 src/libcsp/src/csp_io.o
+                0x000038d6                csp_get_address
  .text.csp_init
-                0x000038ca       0x4e src/libcsp/src/csp_io.o
-                0x000038ca                csp_init
+                0x000038dc       0x4e src/libcsp/src/csp_io.o
+                0x000038dc                csp_init
  .text.csp_read
-                0x00003918       0x52 src/libcsp/src/csp_io.o
-                0x00003918                csp_read
+                0x0000392a       0x52 src/libcsp/src/csp_io.o
+                0x0000392a                csp_read
  .text.csp_send_direct
-                0x0000396a      0x2f6 src/libcsp/src/csp_io.o
-                0x0000396a                csp_send_direct
+                0x0000397c      0x2f6 src/libcsp/src/csp_io.o
+                0x0000397c                csp_send_direct
  .text.csp_send
-                0x00003c60       0xc2 src/libcsp/src/csp_io.o
-                0x00003c60                csp_send
+                0x00003c72       0xc2 src/libcsp/src/csp_io.o
+                0x00003c72                csp_send
  .text.csp_transaction_persistent
-                0x00003d22      0x142 src/libcsp/src/csp_io.o
-                0x00003d22                csp_transaction_persistent
+                0x00003d34      0x142 src/libcsp/src/csp_io.o
+                0x00003d34                csp_transaction_persistent
  .text.csp_transaction
-                0x00003e64       0xa0 src/libcsp/src/csp_io.o
-                0x00003e64                csp_transaction
+                0x00003e76       0xa0 src/libcsp/src/csp_io.o
+                0x00003e76                csp_transaction
  .text.csp_port_get_socket
-                0x00003f04       0x4e src/libcsp/src/csp_port.o
-                0x00003f04                csp_port_get_socket
+                0x00003f16       0x4e src/libcsp/src/csp_port.o
+                0x00003f16                csp_port_get_socket
  .text.csp_port_init
-                0x00003f52       0x14 src/libcsp/src/csp_port.o
-                0x00003f52                csp_port_init
+                0x00003f64       0x14 src/libcsp/src/csp_port.o
+                0x00003f64                csp_port_init
  .text.csp_qfifo_init
-                0x00003f66       0x30 src/libcsp/src/csp_qfifo.o
-                0x00003f66                csp_qfifo_init
+                0x00003f78       0x30 src/libcsp/src/csp_qfifo.o
+                0x00003f78                csp_qfifo_init
  .text.csp_qfifo_read
-                0x00003f96       0x24 src/libcsp/src/csp_qfifo.o
-                0x00003f96                csp_qfifo_read
+                0x00003fa8       0x24 src/libcsp/src/csp_qfifo.o
+                0x00003fa8                csp_qfifo_read
  .text.csp_qfifo_write
-                0x00003fba      0x198 src/libcsp/src/csp_qfifo.o
-                0x00003fba                csp_qfifo_write
+                0x00003fcc      0x198 src/libcsp/src/csp_qfifo.o
+                0x00003fcc                csp_qfifo_write
  .text.csp_route_security_check
-                0x00004152       0x5c src/libcsp/src/csp_route.o
+                0x00004164       0x5c src/libcsp/src/csp_route.o
  .text.csp_route_work
-                0x000041ae      0x4f8 src/libcsp/src/csp_route.o
-                0x000041ae                csp_route_work
+                0x000041c0      0x4f8 src/libcsp/src/csp_route.o
+                0x000041c0                csp_route_work
  .text.csp_task_router
-                0x000046a6        0xa src/libcsp/src/csp_route.o
-                0x000046a6                csp_task_router
+                0x000046b8        0xa src/libcsp/src/csp_route.o
+                0x000046b8                csp_task_router
  .text.csp_route_start_task
-                0x000046b0       0x82 src/libcsp/src/csp_route.o
-                0x000046b0                csp_route_start_task
+                0x000046c2       0x82 src/libcsp/src/csp_route.o
+                0x000046c2                csp_route_start_task
  .text.csp_i2c_tx
-                0x00004732       0x9c src/libcsp/src/interfaces/csp_if_i2c.o
-                0x00004732                csp_i2c_tx
+                0x00004744       0x9c src/libcsp/src/interfaces/csp_if_i2c.o
+                0x00004744                csp_i2c_tx
  .text.csp_i2c_rx
-                0x000047ce       0x78 src/libcsp/src/interfaces/csp_if_i2c.o
-                0x000047ce                csp_i2c_rx
+                0x000047e0       0x78 src/libcsp/src/interfaces/csp_if_i2c.o
+                0x000047e0                csp_i2c_rx
  .text.csp_i2c_init
-                0x00004846       0x60 src/libcsp/src/interfaces/csp_if_i2c.o
-                0x00004846                csp_i2c_init
+                0x00004858       0x60 src/libcsp/src/interfaces/csp_if_i2c.o
+                0x00004858                csp_i2c_init
  .text.csp_lo_tx
-                0x000048a6       0x4e src/libcsp/src/interfaces/csp_if_lo.o
-                0x000048a6                csp_lo_tx
+                0x000048b8       0x4e src/libcsp/src/interfaces/csp_if_lo.o
+                0x000048b8                csp_lo_tx
  .text.csp_rtable_find_iface
-                0x000048f4       0x40 src/libcsp/src/rtable/csp_rtable_static.o
-                0x000048f4                csp_rtable_find_iface
+                0x00004906       0x40 src/libcsp/src/rtable/csp_rtable_static.o
+                0x00004906                csp_rtable_find_iface
  .text.csp_rtable_find_mac
-                0x00004934       0x42 src/libcsp/src/rtable/csp_rtable_static.o
-                0x00004934                csp_rtable_find_mac
+                0x00004946       0x42 src/libcsp/src/rtable/csp_rtable_static.o
+                0x00004946                csp_rtable_find_mac
  .text.csp_rtable_set
-                0x00004976       0x96 src/libcsp/src/rtable/csp_rtable_static.o
-                0x00004976                csp_rtable_set
+                0x00004988       0x96 src/libcsp/src/rtable/csp_rtable_static.o
+                0x00004988                csp_rtable_set
  .text.csp_rtable_print
-                0x00004a0c       0xb6 src/libcsp/src/rtable/csp_rtable_static.o
-                0x00004a0c                csp_rtable_print
+                0x00004a1e       0xb6 src/libcsp/src/rtable/csp_rtable_static.o
+                0x00004a1e                csp_rtable_print
  .text.csp_udp_new_packet
-                0x00004ac2       0xd4 src/libcsp/src/transport/csp_udp.o
-                0x00004ac2                csp_udp_new_packet
+                0x00004ad4       0xd4 src/libcsp/src/transport/csp_udp.o
+                0x00004ad4                csp_udp_new_packet
  .text.__portable_avr_delay_cycles
-                0x00004b96       0x16 src/obc/obc_task.o
+                0x00004ba8       0x16 src/obc/obc_task.o
  .text.led_blinky
-                0x00004bac       0x10 src/obc/obc_task.o
-                0x00004bac                led_blinky
+                0x00004bbe       0x10 src/obc/obc_task.o
+                0x00004bbe                led_blinky
  .text.csp_twoway_client
-                0x00004bbc       0xde src/obc/obc_task.o
-                0x00004bbc                csp_twoway_client
+                0x00004bce       0xe2 src/obc/obc_task.o
+                0x00004bce                csp_twoway_client
  .text.send_start
-                0x00004c9a       0x12 src/util/i2c.o
-                0x00004c9a                send_start
+                0x00004cb0       0x12 src/util/i2c.o
+                0x00004cb0                send_start
  .text.i2c_init
-                0x00004cac      0x10a src/util/i2c.o
-                0x00004cac                i2c_init
+                0x00004cc2      0x10a src/util/i2c.o
+                0x00004cc2                i2c_init
  .text.i2c_send
-                0x00004db6       0xb4 src/util/i2c.o
-                0x00004db6                i2c_send
+                0x00004dcc       0xb4 src/util/i2c.o
+                0x00004dcc                i2c_send
  .text.__vector_39
-                0x00004e6a      0x568 src/util/i2c.o
-                0x00004e6a                __vector_39
+                0x00004e80      0x568 src/util/i2c.o
+                0x00004e80                __vector_39
  .text.uart_putchar
-                0x000053d2       0x3e src/util/uart.o
-                0x000053d2                uart_putchar
+                0x000053e8       0x3e src/util/uart.o
+                0x000053e8                uart_putchar
  .text.uart_getchar
-                0x00005410      0x216 src/util/uart.o
-                0x00005410                uart_getchar
+                0x00005426      0x216 src/util/uart.o
+                0x00005426                uart_getchar
  .text.uart_init
-                0x00005626       0x28 src/util/uart.o
-                0x00005626                uart_init
- .text.main     0x0000564e       0xa6 src/src/main.o
-                0x0000564e                main
+                0x0000563c       0x28 src/util/uart.o
+                0x0000563c                uart_init
+ .text.main     0x00005664       0xa6 src/src/main.o
+                0x00005664                main
  .text.board_init
-                0x000056f4        0x2 src/ASF/mega/boards/stk600/rcx_x/init.o
-                0x000056f4                board_init
+                0x0000570a        0x2 src/ASF/mega/boards/stk600/rcx_x/init.o
+                0x0000570a                board_init
  .text.libgcc.div
-                0x000056f6       0x26 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_divmodhi4.o)
-                0x000056f6                _div
-                0x000056f6                __divmodhi4
+                0x0000570c       0x26 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_divmodhi4.o)
+                0x0000570c                _div
+                0x0000570c                __divmodhi4
  .text.libgcc.div
-                0x0000571c       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_udivmodsi4.o)
-                0x0000571c                __udivmodsi4
- .text.libgcc   0x00005760       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_tablejump2.o)
-                0x00005760                __tablejump2__
+                0x00005732       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_udivmodsi4.o)
+                0x00005732                __udivmodsi4
+ .text.libgcc   0x00005776       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_tablejump2.o)
+                0x00005776                __tablejump2__
  .text.libgcc.mul
-                0x00005770       0x1e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_umulhisi3.o)
-                0x00005770                __umulhisi3
+                0x00005786       0x1e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_umulhisi3.o)
+                0x00005786                __umulhisi3
  .text.libgcc.div
-                0x0000578e       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_udivmodhi4.o)
-                0x0000578e                __udivmodhi4
+                0x000057a4       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_udivmodhi4.o)
+                0x000057a4                __udivmodhi4
  .text.avr-libc
-                0x000057b6       0xaa c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(rand.o)
-                0x00005842                rand_r
-                0x00005844                rand
-                0x0000584a                srand
+                0x000057cc       0xaa c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(rand.o)
+                0x00005858                rand_r
+                0x0000585a                rand
+                0x00005860                srand
  .text.avr-libc
-                0x00005860       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(memcpy.o)
-                0x00005860                memcpy
+                0x00005876       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(memcpy.o)
+                0x00005876                memcpy
  .text.avr-libc
-                0x00005872        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(memset.o)
-                0x00005872                memset
+                0x00005888        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(memset.o)
+                0x00005888                memset
  .text.avr-libc
-                0x00005880       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(strnlen.o)
-                0x00005880                strnlen
+                0x00005896       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(strnlen.o)
+                0x00005896                strnlen
  .text.avr-libc
-                0x00005896       0x84 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(fwrite.o)
-                0x00005896                fwrite
+                0x000058ac       0x84 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(fwrite.o)
+                0x000058ac                fwrite
  .text.avr-libc
-                0x0000591a       0x4e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(printf_p.o)
-                0x0000591a                printf_P
+                0x00005930       0x4e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(printf_p.o)
+                0x00005930                printf_P
  .text.avr-libc
-                0x00005968       0x1c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(vfprintf_p.o)
-                0x00005968                vfprintf_P
+                0x0000597e       0x1c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(vfprintf_p.o)
+                0x0000597e                vfprintf_P
  .text.avr-libc
-                0x00005984      0x3fa c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(vfprintf_std.o)
-                0x00005984                vfprintf
+                0x0000599a      0x3fa c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(vfprintf_std.o)
+                0x0000599a                vfprintf
  .text.avr-libc
-                0x00005d7e       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(strnlen_P.o)
-                0x00005d7e                strnlen_P
+                0x00005d94       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(strnlen_P.o)
+                0x00005d94                strnlen_P
  .text.avr-libc
-                0x00005d94       0x78 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(fputc.o)
-                0x00005d94                fputc
+                0x00005daa       0x78 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(fputc.o)
+                0x00005daa                fputc
  .text.avr-libc
-                0x00005e0c       0xbc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(ultoa_invert.o)
-                0x00005e0c                __ultoa_invert
+                0x00005e22       0xbc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(ultoa_invert.o)
+                0x00005e22                __ultoa_invert
  .text.libgcc.div
-                0x00005ec8       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_divmodsi4.o)
-                0x00005ec8                __divmodsi4
+                0x00005ede       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_divmodsi4.o)
+                0x00005ede                __divmodsi4
  .text.libgcc.div
-                0x00005ef0       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_negsi2.o)
-                0x00005ef0                __negsi2
+                0x00005f06       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_negsi2.o)
+                0x00005f06                __negsi2
  .text.libgcc.mul
-                0x00005f00       0x14 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_muluhisi3.o)
-                0x00005f00                __muluhisi3
+                0x00005f16       0x14 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_muluhisi3.o)
+                0x00005f16                __muluhisi3
  .text.libgcc.mul
-                0x00005f14        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_mulshisi3.o)
-                0x00005f14                __mulshisi3
-                0x00005f18                __mulohisi3
-                0x00005f20                . = ALIGN (0x2)
+                0x00005f2a        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_mulshisi3.o)
+                0x00005f2a                __mulshisi3
+                0x00005f2e                __mulohisi3
+                0x00005f36                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00005f20        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_exit.o)
-                0x00005f20                _exit
-                0x00005f20                exit
+ .fini9         0x00005f36        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_exit.o)
+                0x00005f36                _exit
+                0x00005f36                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -2020,11 +2021,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00005f20        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_exit.o)
+ .fini0         0x00005f36        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_exit.o)
  *(.fini0)
-                0x00005f24                _etext = .
+                0x00005f3a                _etext = .
 
-.data           0x00800200      0x1f2 load address 0x00005f24
+.data           0x00800200      0x208 load address 0x00005f3a
                 0x00800200                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800200        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(rand.o)
@@ -2066,140 +2067,141 @@ END GROUP
  .rodata.str1.1
                 0x00800392       0x26 src/libcsp/src/transport/csp_udp.o
  .rodata.str1.1
-                0x008003b8        0x5 src/obc/obc_task.o
+                0x008003b8       0x1a src/obc/obc_task.o
  .rodata.str1.1
-                0x008003bd        0x8 src/util/uart.o
+                0x008003d2        0x8 src/util/uart.o
  .rodata.str1.1
-                0x008003c5       0x2d src/src/main.o
+                0x008003da       0x2d src/src/main.o
  *(.gnu.linkonce.r*)
-                0x008003f2                . = ALIGN (0x2)
-                0x008003f2                _edata = .
-                0x008003f2                PROVIDE (__data_end, .)
+                0x00800408                . = ALIGN (0x2)
+ *fill*         0x00800407        0x1 
+                0x00800408                _edata = .
+                0x00800408                PROVIDE (__data_end, .)
 
-.bss            0x008003f2     0x1c3c
-                0x008003f2                PROVIDE (__bss_start, .)
+.bss            0x00800408     0x1c3c
+                0x00800408                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
  .bss.xBlockAllocatedBit
-                0x008003f2        0x2 src/FreeRTOS/Source/portable/MemMang/heap_4.o
+                0x00800408        0x2 src/FreeRTOS/Source/portable/MemMang/heap_4.o
  .bss.xMinimumEverFreeBytesRemaining
-                0x008003f4        0x2 src/FreeRTOS/Source/portable/MemMang/heap_4.o
+                0x0080040a        0x2 src/FreeRTOS/Source/portable/MemMang/heap_4.o
  .bss.xFreeBytesRemaining
-                0x008003f6        0x2 src/FreeRTOS/Source/portable/MemMang/heap_4.o
- .bss.pxEnd     0x008003f8        0x2 src/FreeRTOS/Source/portable/MemMang/heap_4.o
- .bss.xStart    0x008003fa        0x4 src/FreeRTOS/Source/portable/MemMang/heap_4.o
- .bss.ucHeap    0x008003fe     0x1964 src/FreeRTOS/Source/portable/MemMang/heap_4.o
+                0x0080040c        0x2 src/FreeRTOS/Source/portable/MemMang/heap_4.o
+ .bss.pxEnd     0x0080040e        0x2 src/FreeRTOS/Source/portable/MemMang/heap_4.o
+ .bss.xStart    0x00800410        0x4 src/FreeRTOS/Source/portable/MemMang/heap_4.o
+ .bss.ucHeap    0x00800414     0x1964 src/FreeRTOS/Source/portable/MemMang/heap_4.o
  .bss.uxSchedulerSuspended
-                0x00801d62        0x1 src/FreeRTOS/Source/tasks.o
+                0x00801d78        0x1 src/FreeRTOS/Source/tasks.o
  .bss.xIdleTaskHandle
-                0x00801d63        0x2 src/FreeRTOS/Source/tasks.o
+                0x00801d79        0x2 src/FreeRTOS/Source/tasks.o
  .bss.xNextTaskUnblockTime
-                0x00801d65        0x4 src/FreeRTOS/Source/tasks.o
+                0x00801d7b        0x4 src/FreeRTOS/Source/tasks.o
  .bss.uxTaskNumber
-                0x00801d69        0x1 src/FreeRTOS/Source/tasks.o
- .bss.xNumOfOverflows
-                0x00801d6a        0x1 src/FreeRTOS/Source/tasks.o
- .bss.xYieldPending
-                0x00801d6b        0x1 src/FreeRTOS/Source/tasks.o
- .bss.uxPendedTicks
-                0x00801d6c        0x1 src/FreeRTOS/Source/tasks.o
- .bss.xSchedulerRunning
-                0x00801d6d        0x1 src/FreeRTOS/Source/tasks.o
- .bss.uxTopReadyPriority
-                0x00801d6e        0x1 src/FreeRTOS/Source/tasks.o
- .bss.xTickCount
-                0x00801d6f        0x4 src/FreeRTOS/Source/tasks.o
- .bss.uxCurrentNumberOfTasks
-                0x00801d73        0x1 src/FreeRTOS/Source/tasks.o
- .bss.xSuspendedTaskList
-                0x00801d74        0xb src/FreeRTOS/Source/tasks.o
- .bss.uxDeletedTasksWaitingCleanUp
                 0x00801d7f        0x1 src/FreeRTOS/Source/tasks.o
+ .bss.xNumOfOverflows
+                0x00801d80        0x1 src/FreeRTOS/Source/tasks.o
+ .bss.xYieldPending
+                0x00801d81        0x1 src/FreeRTOS/Source/tasks.o
+ .bss.uxPendedTicks
+                0x00801d82        0x1 src/FreeRTOS/Source/tasks.o
+ .bss.xSchedulerRunning
+                0x00801d83        0x1 src/FreeRTOS/Source/tasks.o
+ .bss.uxTopReadyPriority
+                0x00801d84        0x1 src/FreeRTOS/Source/tasks.o
+ .bss.xTickCount
+                0x00801d85        0x4 src/FreeRTOS/Source/tasks.o
+ .bss.uxCurrentNumberOfTasks
+                0x00801d89        0x1 src/FreeRTOS/Source/tasks.o
+ .bss.xSuspendedTaskList
+                0x00801d8a        0xb src/FreeRTOS/Source/tasks.o
+ .bss.uxDeletedTasksWaitingCleanUp
+                0x00801d95        0x1 src/FreeRTOS/Source/tasks.o
  .bss.xTasksWaitingTermination
-                0x00801d80        0xb src/FreeRTOS/Source/tasks.o
+                0x00801d96        0xb src/FreeRTOS/Source/tasks.o
  .bss.xPendingReadyList
-                0x00801d8b        0xb src/FreeRTOS/Source/tasks.o
+                0x00801da1        0xb src/FreeRTOS/Source/tasks.o
  .bss.pxOverflowDelayedTaskList
-                0x00801d96        0x2 src/FreeRTOS/Source/tasks.o
+                0x00801dac        0x2 src/FreeRTOS/Source/tasks.o
  .bss.pxDelayedTaskList
-                0x00801d98        0x2 src/FreeRTOS/Source/tasks.o
+                0x00801dae        0x2 src/FreeRTOS/Source/tasks.o
  .bss.xDelayedTaskList2
-                0x00801d9a        0xb src/FreeRTOS/Source/tasks.o
+                0x00801db0        0xb src/FreeRTOS/Source/tasks.o
  .bss.xDelayedTaskList1
-                0x00801da5        0xb src/FreeRTOS/Source/tasks.o
+                0x00801dbb        0xb src/FreeRTOS/Source/tasks.o
  .bss.pxReadyTasksLists
-                0x00801db0       0x37 src/FreeRTOS/Source/tasks.o
+                0x00801dc6       0x37 src/FreeRTOS/Source/tasks.o
  .bss.pxCurrentTCB
-                0x00801de7        0x2 src/FreeRTOS/Source/tasks.o
-                0x00801de7                pxCurrentTCB
- .bss.size      0x00801de9        0x2 src/libcsp/src/csp_buffer.o
- .bss.count     0x00801deb        0x2 src/libcsp/src/csp_buffer.o
+                0x00801dfd        0x2 src/FreeRTOS/Source/tasks.o
+                0x00801dfd                pxCurrentTCB
+ .bss.size      0x00801dff        0x2 src/libcsp/src/csp_buffer.o
+ .bss.count     0x00801e01        0x2 src/libcsp/src/csp_buffer.o
  .bss.csp_buffer_pool
-                0x00801ded        0x2 src/libcsp/src/csp_buffer.o
+                0x00801e03        0x2 src/libcsp/src/csp_buffer.o
  .bss.csp_buffers
-                0x00801def        0x2 src/libcsp/src/csp_buffer.o
+                0x00801e05        0x2 src/libcsp/src/csp_buffer.o
  .bss.csp_conn_last_given.3225
-                0x00801df1        0x1 src/libcsp/src/csp_conn.o
+                0x00801e07        0x1 src/libcsp/src/csp_conn.o
  .bss.sport_lock
-                0x00801df2        0x2 src/libcsp/src/csp_conn.o
- .bss.sport     0x00801df4        0x1 src/libcsp/src/csp_conn.o
+                0x00801e08        0x2 src/libcsp/src/csp_conn.o
+ .bss.sport     0x00801e0a        0x1 src/libcsp/src/csp_conn.o
  .bss.conn_lock
-                0x00801df5        0x2 src/libcsp/src/csp_conn.o
- .bss.arr_conn  0x00801df7       0xf0 src/libcsp/src/csp_conn.o
+                0x00801e0b        0x2 src/libcsp/src/csp_conn.o
+ .bss.arr_conn  0x00801e0d       0xf0 src/libcsp/src/csp_conn.o
  .bss.csp_debug_hook_func
-                0x00801ee7        0x2 src/libcsp/src/csp_debug.o
-                0x00801ee7                csp_debug_hook_func
+                0x00801efd        0x2 src/libcsp/src/csp_debug.o
+                0x00801efd                csp_debug_hook_func
  .bss.interfaces
-                0x00801ee9        0x2 src/libcsp/src/csp_iflist.o
+                0x00801eff        0x2 src/libcsp/src/csp_iflist.o
  .bss.csp_my_address
-                0x00801eeb        0x1 src/libcsp/src/csp_io.o
- .bss.ports     0x00801eec       0x63 src/libcsp/src/csp_port.o
- .bss.qfifo     0x00801f4f        0x2 src/libcsp/src/csp_qfifo.o
+                0x00801f01        0x1 src/libcsp/src/csp_io.o
+ .bss.ports     0x00801f02       0x63 src/libcsp/src/csp_port.o
+ .bss.qfifo     0x00801f65        0x2 src/libcsp/src/csp_qfifo.o
  .bss.handle_router.3087
-                0x00801f51        0x2 src/libcsp/src/csp_route.o
+                0x00801f67        0x2 src/libcsp/src/csp_route.o
  .bss.packet.2416
-                0x00801f53        0x2 src/libcsp/src/interfaces/csp_if_i2c.o
+                0x00801f69        0x2 src/libcsp/src/interfaces/csp_if_i2c.o
  .bss.csp_i2c_handle
-                0x00801f55        0x2 src/libcsp/src/interfaces/csp_if_i2c.o
- .bss.routes    0x00801f57       0x63 src/libcsp/src/rtable/csp_rtable_static.o
+                0x00801f6b        0x2 src/libcsp/src/interfaces/csp_if_i2c.o
+ .bss.routes    0x00801f6d       0x63 src/libcsp/src/rtable/csp_rtable_static.o
  .bss.flag2.3117
-                0x00801fba        0x1 src/util/i2c.o
+                0x00801fd0        0x1 src/util/i2c.o
  .bss.flag.3116
-                0x00801fbb        0x1 src/util/i2c.o
+                0x00801fd1        0x1 src/util/i2c.o
  .bss.xTaskWoken.3115
-                0x00801fbc        0x1 src/util/i2c.o
- .bss.i2c_busy  0x00801fbd        0x2 src/util/i2c.o
- .bss.i2c_addr  0x00801fbf        0x1 src/util/i2c.o
+                0x00801fd2        0x1 src/util/i2c.o
+ .bss.i2c_busy  0x00801fd3        0x2 src/util/i2c.o
+ .bss.i2c_addr  0x00801fd5        0x1 src/util/i2c.o
  .bss.i2c_speed
-                0x00801fc0        0x2 src/util/i2c.o
+                0x00801fd6        0x2 src/util/i2c.o
  .bss.device_mode
-                0x00801fc2        0x2 src/util/i2c.o
- .bss.rx_cnt    0x00801fc4        0x2 src/util/i2c.o
- .bss.tx_cnt    0x00801fc6        0x2 src/util/i2c.o
+                0x00801fd8        0x2 src/util/i2c.o
+ .bss.rx_cnt    0x00801fda        0x2 src/util/i2c.o
+ .bss.tx_cnt    0x00801fdc        0x2 src/util/i2c.o
  .bss.rx_callback
-                0x00801fc8        0x2 src/util/i2c.o
- .bss.rx_queue  0x00801fca        0x2 src/util/i2c.o
- .bss.tx_queue  0x00801fcc        0x2 src/util/i2c.o
- .bss.tx_frame  0x00801fce        0x2 src/util/i2c.o
- .bss.rx_frame  0x00801fd0        0x2 src/util/i2c.o
- .bss.i2cflag   0x00801fd2        0x2 src/util/i2c.o
-                0x00801fd2                i2cflag
- .bss.b.2117    0x00801fd4       0x50 src/util/uart.o
- .bss.rxp.2118  0x00802024        0x2 src/util/uart.o
+                0x00801fde        0x2 src/util/i2c.o
+ .bss.rx_queue  0x00801fe0        0x2 src/util/i2c.o
+ .bss.tx_queue  0x00801fe2        0x2 src/util/i2c.o
+ .bss.tx_frame  0x00801fe4        0x2 src/util/i2c.o
+ .bss.rx_frame  0x00801fe6        0x2 src/util/i2c.o
+ .bss.i2cflag   0x00801fe8        0x2 src/util/i2c.o
+                0x00801fe8                i2cflag
+ .bss.b.2117    0x00801fea       0x50 src/util/uart.o
+ .bss.rxp.2118  0x0080203a        0x2 src/util/uart.o
  *(COMMON)
- COMMON         0x00802026        0x2 src/obc/obc_task.o
-                0x00802026                I2C_task
- COMMON         0x00802028        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(iob.o)
-                0x00802028                __iob
-                0x0080202e                PROVIDE (__bss_end, .)
-                0x00005f24                __data_load_start = LOADADDR (.data)
-                0x00006116                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x0080203c        0x2 src/obc/obc_task.o
+                0x0080203c                I2C_task
+ COMMON         0x0080203e        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(iob.o)
+                0x0080203e                __iob
+                0x00802044                PROVIDE (__bss_end, .)
+                0x00005f3a                __data_load_start = LOADADDR (.data)
+                0x00006142                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x0080202e        0x0
+.noinit         0x00802044        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x0080202e                _end = .
+                0x00802044                _end = .
                 [!provide]                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
@@ -2364,7 +2366,7 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0xce93
+.debug_info     0x00000000     0xceba
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0xbbc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega2560/avr6/crtatmega2560.o
  .debug_info    0x00000bbc      0x2ca src/FreeRTOS/Source/list.o
@@ -2391,13 +2393,13 @@ END GROUP
  .debug_info    0x0000a8ab      0x3e4 src/libcsp/src/interfaces/csp_if_lo.o
  .debug_info    0x0000ac8f      0x571 src/libcsp/src/rtable/csp_rtable_static.o
  .debug_info    0x0000b200      0x462 src/libcsp/src/transport/csp_udp.o
- .debug_info    0x0000b662      0x3f8 src/obc/obc_task.o
- .debug_info    0x0000ba5a      0x9f8 src/util/i2c.o
- .debug_info    0x0000c452      0x445 src/util/uart.o
- .debug_info    0x0000c897      0x584 src/src/main.o
- .debug_info    0x0000ce1b       0x78 src/ASF/mega/boards/stk600/rcx_x/init.o
+ .debug_info    0x0000b662      0x41f src/obc/obc_task.o
+ .debug_info    0x0000ba81      0x9f8 src/util/i2c.o
+ .debug_info    0x0000c479      0x445 src/util/uart.o
+ .debug_info    0x0000c8be      0x584 src/src/main.o
+ .debug_info    0x0000ce42       0x78 src/ASF/mega/boards/stk600/rcx_x/init.o
 
-.debug_abbrev   0x00000000     0x3fb8
+.debug_abbrev   0x00000000     0x3fc7
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0xb1a C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega2560/avr6/crtatmega2560.o
  .debug_abbrev  0x00000b1a       0xf8 src/FreeRTOS/Source/list.o
@@ -2424,13 +2426,13 @@ END GROUP
  .debug_abbrev  0x0000323a      0x193 src/libcsp/src/interfaces/csp_if_lo.o
  .debug_abbrev  0x000033cd      0x258 src/libcsp/src/rtable/csp_rtable_static.o
  .debug_abbrev  0x00003625      0x18a src/libcsp/src/transport/csp_udp.o
- .debug_abbrev  0x000037af      0x241 src/obc/obc_task.o
- .debug_abbrev  0x000039f0      0x232 src/util/i2c.o
- .debug_abbrev  0x00003c22      0x193 src/util/uart.o
- .debug_abbrev  0x00003db5      0x1bf src/src/main.o
- .debug_abbrev  0x00003f74       0x44 src/ASF/mega/boards/stk600/rcx_x/init.o
+ .debug_abbrev  0x000037af      0x250 src/obc/obc_task.o
+ .debug_abbrev  0x000039ff      0x232 src/util/i2c.o
+ .debug_abbrev  0x00003c31      0x193 src/util/uart.o
+ .debug_abbrev  0x00003dc4      0x1bf src/src/main.o
+ .debug_abbrev  0x00003f83       0x44 src/ASF/mega/boards/stk600/rcx_x/init.o
 
-.debug_line     0x00000000     0x720c
+.debug_line     0x00000000     0x7212
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x1f9 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega2560/avr6/crtatmega2560.o
  .debug_line    0x000001f9      0x22e src/FreeRTOS/Source/list.o
@@ -2457,13 +2459,13 @@ END GROUP
  .debug_line    0x00005dbc      0x12b src/libcsp/src/interfaces/csp_if_lo.o
  .debug_line    0x00005ee7      0x255 src/libcsp/src/rtable/csp_rtable_static.o
  .debug_line    0x0000613c      0x204 src/libcsp/src/transport/csp_udp.o
- .debug_line    0x00006340      0x27b src/obc/obc_task.o
- .debug_line    0x000065bb      0x728 src/util/i2c.o
- .debug_line    0x00006ce3      0x286 src/util/uart.o
- .debug_line    0x00006f69      0x24b src/src/main.o
- .debug_line    0x000071b4       0x58 src/ASF/mega/boards/stk600/rcx_x/init.o
+ .debug_line    0x00006340      0x281 src/obc/obc_task.o
+ .debug_line    0x000065c1      0x728 src/util/i2c.o
+ .debug_line    0x00006ce9      0x286 src/util/uart.o
+ .debug_line    0x00006f6f      0x24b src/src/main.o
+ .debug_line    0x000071ba       0x58 src/ASF/mega/boards/stk600/rcx_x/init.o
 
-.debug_frame    0x00000000     0x27e8
+.debug_frame    0x00000000     0x27ec
  *(.debug_frame)
  .debug_frame   0x00000000       0x90 src/FreeRTOS/Source/list.o
  .debug_frame   0x00000090       0xb4 src/FreeRTOS/Source/portable/MemMang/heap_4.o
@@ -2489,13 +2491,13 @@ END GROUP
  .debug_frame   0x00002358       0x38 src/libcsp/src/interfaces/csp_if_lo.o
  .debug_frame   0x00002390      0x114 src/libcsp/src/rtable/csp_rtable_static.o
  .debug_frame   0x000024a4       0x40 src/libcsp/src/transport/csp_udp.o
- .debug_frame   0x000024e4       0x54 src/obc/obc_task.o
- .debug_frame   0x00002538      0x1bc src/util/i2c.o
- .debug_frame   0x000026f4       0x94 src/util/uart.o
- .debug_frame   0x00002788       0x3c src/src/main.o
- .debug_frame   0x000027c4       0x24 src/ASF/mega/boards/stk600/rcx_x/init.o
+ .debug_frame   0x000024e4       0x58 src/obc/obc_task.o
+ .debug_frame   0x0000253c      0x1bc src/util/i2c.o
+ .debug_frame   0x000026f8       0x94 src/util/uart.o
+ .debug_frame   0x0000278c       0x3c src/src/main.o
+ .debug_frame   0x000027c8       0x24 src/ASF/mega/boards/stk600/rcx_x/init.o
 
-.debug_str      0x00000000     0x311b
+.debug_str      0x00000000     0x315e
  *(.debug_str)
  .debug_str     0x00000000      0x3e6 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega2560/avr6/crtatmega2560.o
  .debug_str     0x000003e6      0x296 src/FreeRTOS/Source/list.o
@@ -2546,18 +2548,18 @@ END GROUP
                                 0x3d6 (size before relaxing)
  .debug_str     0x00002dca       0x26 src/libcsp/src/transport/csp_udp.o
                                 0x3bc (size before relaxing)
- .debug_str     0x00002df0      0x166 src/obc/obc_task.o
-                                0x367 (size before relaxing)
- .debug_str     0x00002f56      0x108 src/util/i2c.o
+ .debug_str     0x00002df0      0x1a9 src/obc/obc_task.o
+                                0x379 (size before relaxing)
+ .debug_str     0x00002f99      0x108 src/util/i2c.o
                                 0x580 (size before relaxing)
- .debug_str     0x0000305e       0x5f src/util/uart.o
+ .debug_str     0x000030a1       0x5f src/util/uart.o
                                 0x20f (size before relaxing)
- .debug_str     0x000030bd       0x33 src/src/main.o
+ .debug_str     0x00003100       0x33 src/src/main.o
                                 0x365 (size before relaxing)
- .debug_str     0x000030f0       0x2b src/ASF/mega/boards/stk600/rcx_x/init.o
+ .debug_str     0x00003133       0x2b src/ASF/mega/boards/stk600/rcx_x/init.o
                                 0x19c (size before relaxing)
 
-.debug_loc      0x00000000     0xbc3a
+.debug_loc      0x00000000     0xbcb0
  *(.debug_loc)
  .debug_loc     0x00000000      0x17d src/FreeRTOS/Source/list.o
  .debug_loc     0x0000017d      0x394 src/FreeRTOS/Source/portable/MemMang/heap_4.o
@@ -2582,10 +2584,10 @@ END GROUP
  .debug_loc     0x0000ac44       0xd1 src/libcsp/src/interfaces/csp_if_lo.o
  .debug_loc     0x0000ad15      0x335 src/libcsp/src/rtable/csp_rtable_static.o
  .debug_loc     0x0000b04a       0xc8 src/libcsp/src/transport/csp_udp.o
- .debug_loc     0x0000b112       0xdc src/obc/obc_task.o
- .debug_loc     0x0000b1ee      0x6ef src/util/i2c.o
- .debug_loc     0x0000b8dd      0x2ed src/util/uart.o
- .debug_loc     0x0000bbca       0x70 src/src/main.o
+ .debug_loc     0x0000b112      0x152 src/obc/obc_task.o
+ .debug_loc     0x0000b264      0x6ef src/util/i2c.o
+ .debug_loc     0x0000b953      0x2ed src/util/uart.o
+ .debug_loc     0x0000bc40       0x70 src/src/main.o
 
 .debug_macinfo
  *(.debug_macinfo)

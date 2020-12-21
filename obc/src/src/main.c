@@ -38,7 +38,7 @@ int main(void) {
     // Initialize UART
     // Baud Rate: 57600
     uart_init();
-    printf("----------- EPS: Initialization Mode -----------\r\n");
+    printf("----------- OBC: Initialization Mode -----------\r\n");
 
 
     // Initialize GPIO for SPI dependencies
@@ -68,7 +68,7 @@ int main(void) {
 
 
     /* Autonomous Mode */
-    printf("----------- EPS: Autonomous Mode -----------");
+    printf("----------- OBC: Autonomous Mode -----------\r\n");
     // Start Scheduler
     vTaskStartScheduler();
 

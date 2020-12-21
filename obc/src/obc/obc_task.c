@@ -40,10 +40,12 @@ void led_blinky(void *pvParameters) {
 }
 
 void csp_twoway_client(void *pvParameters) {
+    int count = 0;
     int ret;
     char incoming[100] = "";
     char outgoing_data[] = "hello_twoway";
     char outgoing_ping[] = "Ping";
+    char outgoing_hk[] = "Housekeeping data Request";
 
     while (1) {
         /**
@@ -59,18 +61,21 @@ void csp_twoway_client(void *pvParameters) {
             @param inlen length of expected reply, -1 for unknown size (note inbuf MUST be large enough)
             @return Return 1 or reply size if successful, 0 if error or incoming length does not match or -1 if timeout was reached
         */
-        ret = csp_transaction(OBC_CSP_PRIO, EPS_ADDR, EPS_CONN_PORT_PING, OBC_CSP_TRANSACTION_TIMEOUT, outgoing_ping,
-                              strlen(outgoing_ping), incoming, -1);
+        ret = csp_transaction(OBC_CSP_PRIO, EPS_ADDR, EPS_CONN_PORT_HK, OBC_CSP_TRANSACTION_TIMEOUT, outgoing_hk,
+                              strlen(outgoing_hk), incoming, -1);
 
         if (ret != -1 && ret != 0) {
-            printf("Ping -- Success\r\n");
-            printf("Reply: %s, Length: %d\r\n\r\n", incoming, ret);
+            //printf("Ping -- Success\r\n");
+            //printf("Reply: %s, Length: %d\r\n\r\n", incoming, ret);
+            count++;
+            printf("Received packet #%d\r\n", count);
+            printf("Received temperature: %s  *C\r\n\r\n", incoming);
         }
         else if (ret == -1) {
-            printf("Ping -- Timeout\r\n");
+            printf("Ping -- Timeout\r\n\r\n");
         }
         else {
-            printf("Ping -- Failed\r\n");
+            printf("Ping -- Failed\r\n\r\n");
         }
 
         //delay_ms(2000);
