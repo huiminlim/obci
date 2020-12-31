@@ -8,37 +8,6 @@ This is part of a simplified software implementation of a CubeSat for FYP.
 
 The OBC is at the heart of of the CubeSat and manages several subsystems. 
 
-The overall configuration of the CubeSat is as such:
-
-```                                           
-                                                          
-    CSP / I2C Bus                                         
-    --------------------------------------------------    
-    /          |           |             |           \    
-   /           |           |             |            \   
-+-----+    +------+    +------+    +----------+    +-----+
-| EPS |    | ADCS |    | TT&C |    | Payload  |    | OBC |
-+-----+    +------+    +------+    | Computer |    +-----+
-                                   +----------+           
-                                         |                
-                                         | UART           
-                                         |                
-                                    +---------+           
-                                    | Payload |           
-                                    | Manager |           
-                                    +---------+                
-```
-
-Each subsystem also has a CSP address for other nodes to initiate communication with itself.
-
-|    Subsystem     | CSP Address |
-|------------------|-------------|
-| OBC              |           1 |
-| EPS              |           2 |
-| ADCS             |           3 |
-| TT&C             |           5 |
-| Payload Computer |           6 |
-
 ## Current Development Progress
 
 Currently, this project is developed for the ATmega 2560 microcontroller and besides the OBC, the CubeSat design has only the EPS subsystem.
